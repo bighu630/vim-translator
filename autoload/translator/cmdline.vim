@@ -84,7 +84,8 @@ function! translator#cmdline#complete(arg_lead, cmd_line, cursor_pos) abort
     return candidates
   endif
 
-  let engines = ['bing', 'google', 'haici', 'iciba', 'sdcv', 'trans', 'youdao']
+  " let engines = ['bing', 'google', 'haici', 'iciba', 'sdcv', 'trans', 'youdao']
+  let engines = ['google']
   if match(prefix, ',') > -1
     let pos = s:matchlastpos(prefix, ',')
     let preprefix = prefix[:pos]
